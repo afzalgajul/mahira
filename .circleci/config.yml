@@ -30,6 +30,9 @@ workflows:
       - aws-ecr/build-and-push-image:
           tag: "latest,v0.1.${CIRCLE_BUILD_NUM}"
           dockerfile: build/Dockerfile.prod
+          ORB_EVAL_REGION=$(eval echo "${us-east-1}")
+          ORB_VAL_ACCOUNT_URL="${148774211651}.dkr.ecr.${us-east-1}.amazonaws.com"
+          ECR_COMMAND="ecr"
           repo: slackcicd
           requires:
                 - build
