@@ -36,7 +36,6 @@ workflows:
           repo: slackcicd
           tag: latest
           environment:
-            AWS_REGION: us-east-1
             AWS_ACCOUNT_ID: '148774211651'
               path: .
                 requires:
