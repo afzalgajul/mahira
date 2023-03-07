@@ -23,7 +23,7 @@ jobs:
     - store_test_results:
         path: /tmp/test-results   
     environment:
-     - ECR_REPO_URL: "148774211651.dkr.ecr.us-east-1.amazonaws.com/slackcicd"
+     - ECR_REPO_URL: "148774211651.dkr.ecr.us-east-1.amazonaws.com"
      - run: echo "ECR repo URL is $ECR_REPO_URL"    
 
 workflows:
