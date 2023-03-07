@@ -35,6 +35,6 @@ workflows:
           tag: "latest,v0.1.${CIRCLE_BUILD_NUM}"
           dockerfile: build/Dockerfile.prod
           #repository-url: "${148774211651}.dkr.ecr.${us-east-1}.amazonaws.com"
-          repo: "148774211651.dkr.ecr.us-east-1.amazonaws.com/slackcicd"
+          repo: "148774211651.dkr.ecr.us-east-1.amazonaws.com"
           requires:
                 - build
